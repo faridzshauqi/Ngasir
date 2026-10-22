@@ -19,3 +19,7 @@ Aplikasi Ngasir membantu pengguna mengelola data produk, kategori, dan stok bara
 - Tampilan stok produk untuk melihat ketersediaan produk.
 - Pencatatan transaksi dan detail transaksi mencatat transaksi penjualan, memilih produk yang dibeli, menentukan jumlah barang, dan menghitung total pembayaran.
 - Pencarian/filter daftar data untuk memudahkan pengguna mencari produk, kategori, atau data transaksi berdasarkan kata kunci maupun kriteria tertentu.
+
+## Wireframe
+konsep/gambaran bisa diakses melalui link berikut:
+https://canva.link/oj3ltub1ecfvku3
