@@ -1,4 +1,4 @@
-# KasirKu — Aplikasi Kasir dan Stok Produk
+# Ngasir — Aplikasi Kasir dan Stok Produk
 
 Aplikasi web sederhana untuk membantu toko mencatat produk, kategori, stok, dan transaksi penjualan.
 
@@ -6,7 +6,7 @@ Aplikasi web sederhana untuk membantu toko mencatat produk, kategori, stok, dan 
 Pencatatan manual dapat menyulitkan pengelolaan produk dan rekap transaksi. KasirKu direncanakan untuk menyatukan informasi tersebut dalam satu aplikasi web.
 
 ## Manfaat Aplikasi
-Aplikasi KasirKu membantu pengguna mengelola data produk, kategori, dan stok barang secara lebih terorganisir. Aplikasi ini juga mempermudah pencatatan transaksi, perhitungan total penjualan, serta pemantauan informasi melalui dashboard.
+Aplikasi Ngasir membantu pengguna mengelola data produk, kategori, dan stok barang secara lebih terorganisir. Aplikasi ini juga mempermudah pencatatan transaksi, perhitungan total penjualan, serta pemantauan informasi melalui dashboard.
 
 ## Target Pengguna
 - Admin/kasir sebagai pengguna utama untuk melakukan transaksi dan pencatatan produk.
