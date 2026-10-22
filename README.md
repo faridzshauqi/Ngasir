@@ -3,7 +3,7 @@
 Aplikasi web sederhana untuk membantu toko mencatat produk, kategori, stok, dan transaksi penjualan.
 
 ## Latar Belakang
-Pencatatan manual dapat menyulitkan pengelolaan produk dan rekap transaksi. KasirKu direncanakan untuk menyatukan informasi tersebut dalam satu aplikasi web.
+Pencatatan manual dapat menyulitkan pengelolaan produk dan rekap transaksi. Aplikasi Ngasir direncanakan untuk menyatukan informasi tersebut dalam satu aplikasi web.
 
 ## Manfaat Aplikasi
 Aplikasi Ngasir membantu pengguna mengelola data produk, kategori, dan stok barang secara lebih terorganisir. Aplikasi ini juga mempermudah pencatatan transaksi, perhitungan total penjualan, serta pemantauan informasi melalui dashboard.
