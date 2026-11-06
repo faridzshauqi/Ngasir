@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngasir - Transaksi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h1 class="logo">Ngasir</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="produk.html">Produk</a>
+            <a href="transaksi.html" class="active">Transaksi</a>
+            <a href="login.html" id="btnLogout" class="btn-logout">Logout</a>
+        </nav>
+    </header>
+
+    <main class="transaksi-layout">
+        <div class="transaksi-left">
+            <div class="card-container">
+                <div class="card-header">
+                    <span class="label-header">Kelola stok produk</span>
+                    
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" placeholder="cari nama produk" id="searchInput">
+                    </div>
+
+                    <button class="btn-tambah-produk" id="btnOpenModal">Tambah Produk</button>
+                </div>
+
+                <div class="card-body">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Kategori</th>
+                                <th>Harga</th>
+                                <th>Stok</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Indomie goreng</td>
+                                <td>Makanan</td>
+                                <td>Rp. 3.500</td>
+                                <td>20</td>
+                                <td class="action-links">
+                                    <a href="#" class="btn-edit btn-tambah-item">Tambah</a>
+                                    <a href="#" class="btn-hapus">Hapus</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Aqua 600ml</td>
+                                <td>Minuman</td>
+                                <td>Rp. 4.500</td>
+                                <td>5</td>
+                                <td class="action-links">
+                                    <a href="#" class="btn-edit btn-tambah-item">Tambah</a>
+                                    <a href="#" class="btn-hapus">Hapus</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Roti Cokelat</td>
+                                <td>Makanan</td>
+                                <td>Rp. 6.000</td>
+                                <td>0</td>
+                                <td class="action-links">
+                                    <a href="#" class="btn-edit btn-tambah-item">Tambah</a>
+                                    <a href="#" class="btn-hapus">Hapus</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Chitato</td>
+                                <td>Snack</td>
+                                <td>Rp. 10.000</td>
+                                <td>15</td>
+                                <td class="action-links">
+                                    <a href="#" class="btn-edit btn-tambah-item">Tambah</a>
+                                    <a href="#" class="btn-hapus">Hapus</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-card">
+            <div>
+                <div class="cart-header-row">
+                    <span>Nama</span>
+                    <span>Harga</span>
+                </div>
+
+                <!-- Kosong secara default saat awal dimuat -->
+                <ul class="cart-items-list" id="cartItemsList"></ul>
+
+                <hr class="cart-divider">
+
+                <div class="cart-total-row">
+                    <span>Total:</span>
+                    <span id="textTotalHarga"></span>
+                </div>
+            </div>
+
+            <button type="button" class="btn-bayar">Bayar</button>
+        </div>
+    </main>
+
+    <!-- Modal Pop-up Opsional jika dipanggil dari transaksi -->
+    <div class="modal-overlay" id="modalTambahProduk">
+        <div class="modal-card">
+            <span class="close-btn" id="btnCloseModal">&times;</span>
+            <h2 class="modal-title">Tambah Produk</h2>
+            
+            <form id="formTambahProduk" class="modal-grid-form">
+                <div class="form-group">
+                    <label for="namaProduk">Nama Produk</label>
+                    <input type="text" id="namaProduk" required>
+                </div>
+                <div class="form-group">
+                    <label for="kategoriProduk">Kategori</label>
+                    <input type="text" id="kategoriProduk" required>
+                </div>
+                <div class="form-group">
+                    <label for="hargaProduk">Harga</label>
+                    <input type="number" id="hargaProduk" required>
+                </div>
+                <div class="form-group">
+                    <label for="stokProduk">Jumlah Stok</label>
+                    <input type="number" id="stokProduk" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-simpan">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

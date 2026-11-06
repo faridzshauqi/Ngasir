@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngasir - Produk</title>
+    <!-- Pastikan nama file CSS ini sesuai -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <h1 class="logo">Ngasir</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="produk.html" class="active">Produk</a>
+            <a href="transaksi.html">Transaksi</a>
+            <a href="login.html" id="btnLogout" class="btn-logout">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="card-container">
+            
+            <!-- Header Kartu -->
+            <div class="card-header">
+                <span class="label-header">Kelola stok produk</span>
+                
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="cari kategori produk" id="searchInput">
+                </div>
+
+                <button class="btn-tambah-produk" id="btnOpenModal">Tambah Produk</button>
+            </div>
+
+            <!-- Body Tabel -->
+            <div class="card-body">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Kategori</th>
+                            <th>Harga</th>
+                            <th>Stok</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelProdukBody">
+                        <tr>
+                            <td>1</td>
+                            <td>Indomie goreng</td>
+                            <td>Makanan</td>
+                            <td>Rp. 3.500</td>
+                            <td>20</td>
+                            <td><span class="status status-tersedia">Tersedia</span></td>
+                            <td class="action-links">
+                                <a href="#" class="btn-edit">Edit</a>
+                                <a href="#" class="btn-hapus">Hapus</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Aqua 600ml</td>
+                            <td>Minuman</td>
+                            <td>Rp. 4.500</td>
+                            <td>5</td>
+                            <td><span class="status status-hampir-habis">Hampir Habis</span></td>
+                            <td class="action-links">
+                                <a href="#" class="btn-edit">Edit</a>
+                                <a href="#" class="btn-hapus">Hapus</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Roti Cokelat</td>
+                            <td>Makanan</td>
+                            <td>Rp. 6.000</td>
+                            <td>0</td>
+                            <td><span class="status status-habis">Habis</span></td>
+                            <td class="action-links">
+                                <a href="#" class="btn-edit">Edit</a>
+                                <a href="#" class="btn-hapus">Hapus</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Chitato</td>
+                            <td>Snack</td>
+                            <td>Rp. 10.000</td>
+                            <td>15</td>
+                            <td><span class="status status-tersedia">Tersedia</span></td>
+                            <td class="action-links">
+                                <a href="#" class="btn-edit">Edit</a>
+                                <a href="#" class="btn-hapus">Hapus</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- MODAL POP-UP TAMBAH PRODUK -->
+    <div class="modal-overlay" id="modalTambahProduk">
+        <div class="modal-card">
+            <span class="close-btn" id="btnCloseModal">&times;</span>
+            <h2 class="modal-title">Tambah Produk</h2>
+            
+            <form id="formTambahProduk" class="modal-grid-form">
+                <div class="form-group">
+                    <label for="namaProduk">Nama Produk</label>
+                    <input type="text" id="namaProduk" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="kategoriProduk">Kategori</label>
+                    <input type="text" id="kategoriProduk" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hargaProduk">Harga</label>
+                    <input type="number" id="hargaProduk" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="stokProduk">Jumlah Stok</label>
+                    <input type="number" id="stokProduk" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-simpan">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

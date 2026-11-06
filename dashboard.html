@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngasir - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="logo">Ngasir</h1>
+        <nav>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="produk.html">Produk</a>
+            <a href="transaksi.html">Transaksi</a>
+            <a href="login.html" id="btnLogout" class="btn-logout">Logout</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-grid">
+        <!-- Stat Card Sisi Kiri -->
+        <div class="stat-card">
+            <ul class="stat-list">
+                <li class="stat-item"><span class="stat-icon">📦</span> Total Produk :</li>
+                <li class="stat-item"><span class="stat-icon">🏷️</span> Stok Tersedia :</li>
+                <li class="stat-item"><span class="stat-icon">🤝</span> Transaksi Hari ini :</li>
+                <li class="stat-item"><span class="stat-icon">💰</span> Penjualan Hari ini :</li>
+            </ul>
+        </div>
+
+        <!-- Tabel Transaksi Sisi Kanan -->
+        <div class="dashboard-table-container">
+            <h2 class="dashboard-title">Selamat Datang, Admin!</h2>
+
+            <div class="card-container">
+                <div class="card-header">
+                    <span class="label-header">10 oktober 2025</span>
+                </div>
+                <div class="card-body">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>ID</th>
+                                <th>Kasir</th>
+                                <th>Total</th>
+                                <th>Waktu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>TRX001</td>
+                                <td>Admin</td>
+                                <td>Rp. 50.000</td>
+                                <td>19.53</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>TRX002</td>
+                                <td>Admin</td>
+                                <td>Rp.800.000</td>
+                                <td>19.55</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>TRX003</td>
+                                <td>Admin</td>
+                                <td>Rp. 5.000</td>
+                                <td>20.05</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
